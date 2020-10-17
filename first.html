@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function addfriend(){
+                var tb = document.getElementById('tbf').value;
+
+                var frnds = document.getElementById('friends');
+                frnds.innerHTML += "<li> " + tb + "</li>";
+                document.getElementById('tbf').value= '' ;
+                document.getElementById('tbf').focus();
+        }
+    </script>
+
+
+</head>
+
+
+<body>
+    <input type="text" id="tbf">
+
+    <button onclick="addfriend()">Add</button>
+    
+    <ul id="friends">
+
+
+    </ul>
+    
+</body>
+
+</html>
